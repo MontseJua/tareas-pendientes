@@ -31,8 +31,8 @@ function agregarTarea(tarea,id,hecho,eliminar) {
     const elemento = `<li id="elemento">
                     <i id="${id}" data="hecho" class="bi ${realizado}"></i>
                     <p class="tarea-lista text ${LINE}">${tarea}</p>
-                    <i id="${id}" data="eliminar" class="bi bi-x"></i>
-                </li>`
+                    <i id="${id}" data="eliminar" class="bi bi-trash"></i>
+                </li> `
                 lista.insertAdjacentHTML("beforeend",elemento);
 
 };
@@ -96,4 +96,3 @@ function cargarLista(array) {
         }
     )
 };
-
